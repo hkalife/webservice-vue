@@ -1,5 +1,7 @@
 # aeroporto
 
+O projeto presente aqui refere-se a um teste com o framework Vue.JS utilizando um serviço simples de GET.
+
 ## Project setup
 ```
 npm install
