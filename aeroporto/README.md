@@ -3,9 +3,9 @@
 O projeto presente aqui refere-se a um teste com o framework Vue.JS utilizando um serviço simples de GET.
 
 ## Guia
-```
+
 Para ver o passo a passo, clique na [Wiki](https://github.com/hkalife/webservice-vue/wiki/Wiki)
-```
+
 
 ### Project setup
 ```
