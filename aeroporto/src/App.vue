@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    
     <Body msg="Busca de Aeroportos"/>
   </div>
 </template>

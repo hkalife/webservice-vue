@@ -1,0 +1,13 @@
+DESCRIÇÃO DOS ARQUIVOS: Explicação para trabalho da cadeira PWII do IFRS. (2019/2)
+by Henrique Kalife
+
+Pasta Assets: Pasta onde residem os arquivos que serão utilizados pelo sistema. Exemplo: Fotos.
+Não é obrigatório utilizar, porém é recomendado para manter a qualidade e organização dos arquivos. Já é gerado automaticamente pelo NPM na criação do projeto.
+
+Pasta components
+    - Body.vue : Componente do Vue.js que é chamado pelo App.vue para compor a página criada. Aqui encontram-se os elementos de interface e os métodos que iniciam
+    a chamada da Api.
+
+aeroporto.js : Classe para armazenar, ao ser instanciada, informações sobre o aeroporto vindos da API.
+aeroportoApi.js : Criação da requisição com o método GET, utilizando o fetch para buscar as informações da API.
+App.vue : Arquivo utilizado aqui, essencialmente, para distribuição dos componentes.
