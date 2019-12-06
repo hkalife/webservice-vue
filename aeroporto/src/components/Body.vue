@@ -14,7 +14,8 @@
         <p>{{ localizacao }}</p>
       </div>
     </div>
-    <button v-if="requisicaoOk" id="botaoAcesso" type="button" class="btn btn-outline-light" v-on:click="acessarSite()">Acessar website</button> 
+    <button v-if="requisicaoOk" id="botaoAcesso" type="button" class="btn btn-outline-light" v-on:click="acessarSite()">Acessar website</button>
+    <h2 id="avisoErro" v-if="algoErrado">Houve algo de errado. Reveja o IATA digitado.</h2>
   </div>
 </template>
 
@@ -33,7 +34,8 @@ export default {
       icao: '',
       localizacao: '',
       website: '',
-      requisicaoOk: false
+      requisicaoOk: false,
+      algoErrado: false
     }
   },
   methods: {
@@ -48,7 +50,14 @@ export default {
         this.website = response.website
 
         if (response !== null || response !== undefined) {
-          this.requisicaoOk = true;
+          if (this.nome !== undefined) {
+            this.requisicaoOk = true
+            this.algoErrado = false
+          }
+          else {
+            this.algoErrado = true
+            this.requisicaoOk = false
+          }
         }
       }
       else {
@@ -91,5 +100,9 @@ a {
   padding-bottom: 2%;
   padding-top: 2%;
   
+}
+#avisoErro {
+  color: #ff0000;
+  padding-top: 2%;
 }
 </style>
